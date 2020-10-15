@@ -18,20 +18,18 @@ function addElement () {
 
     }
 }
-
-
 document.addEventListener('mouseover', function(e){
     // Om man hovrar över ett item med classnamn "balloon" så händer det nedan.
     if (e.target.className === "balloon"){
-                //ändrar css
-				e.target.className = "balloonpopped"
-                e.target.style.backgroundColor = "#ededed";
-                e.target.textContent = "POP!";
-                //lägger till på variablen popped
-                popped++;
-                removeEvent(e);
-                //kallar funktionen nedan
-                checkAllPopped();
+        //ändrar css
+		e.target.className = "balloonpopped"
+        e.target.style.backgroundColor = "#ededed";
+        e.target.textContent = "POP!";
+        //lägger till på variablen popped
+        popped++;
+        removeEvent(e);
+        //kallar funktionen nedan
+        checkAllPopped();
     }   
 });
 
