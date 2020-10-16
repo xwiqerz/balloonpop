@@ -46,5 +46,5 @@ function checkAllPopped(){
     gallery.innerHTML = '';
     message.style.display = 'block';
     balloon_container.innerHTML = "YAY!";
-  }
+    }
 };
